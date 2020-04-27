@@ -1,4 +1,4 @@
-package com.hasan;
+package com.hasan.declaretive;
 
 import java.util.Arrays;
 import java.util.List;
@@ -14,22 +14,6 @@ public class IntegerFinderDemo {
         findInteger(ints,5);
     }
 
-    private static void finds(List<Integer> ints, int num) {
-        boolean found = false;
-
-        for (Integer integer : ints){
-            if (integer.equals(num)){
-                found = true;
-                break;
-            }
-        }
-
-        if (found){
-            System.out.println(num + " found");
-        }else {
-            System.out.println(num + " not found.");
-        }
-    }
 
     static void findInteger(List<Integer> integers, int num){
         if (integers.contains(num)){
